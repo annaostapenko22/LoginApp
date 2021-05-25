@@ -112,9 +112,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6f-qM-ICg">
-                                <rect key="frame" x="170" y="434.5" width="74" height="36"/>
+                                <rect key="frame" x="167" y="434.5" width="80" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="eaa-uM-Iuo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="eaa-uM-Iuo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Log Out">
