@@ -106,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="jLQ-lR-f7Z">
-                                <rect key="frame" x="19" y="295" width="376" height="50"/>
+                                <rect key="frame" x="19" y="295.5" width="376" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvO-ol-HEA">
                                         <rect key="frame" x="0.0" y="0.0" width="57" height="50"/>
@@ -206,7 +206,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="AUl-vK-YV0">
-                                <rect key="frame" x="18.5" y="223" width="376" height="40"/>
+                                <rect key="frame" x="18.5" y="223.5" width="376" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="water " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ui-AA-0Md" userLabel="water">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
@@ -297,7 +297,7 @@
                             <constraint firstItem="REL-5y-wq1" firstAttribute="width" secondItem="uu2-5u-55O" secondAttribute="width" id="akg-eb-Fd8"/>
                             <constraint firstItem="jLQ-lR-f7Z" firstAttribute="width" secondItem="AUl-vK-YV0" secondAttribute="width" id="bq3-Eb-jsx"/>
                             <constraint firstItem="AUl-vK-YV0" firstAttribute="centerX" secondItem="Lcl-sH-9Bq" secondAttribute="centerX" constant="-0.5" id="ef9-kw-rhp"/>
-                            <constraint firstItem="AUl-vK-YV0" firstAttribute="top" secondItem="b6p-48-GCT" secondAttribute="bottom" constant="74.5" id="iVd-4V-a1i"/>
+                            <constraint firstItem="AUl-vK-YV0" firstAttribute="top" secondItem="b6p-48-GCT" secondAttribute="bottom" constant="75" id="iVd-4V-a1i"/>
                             <constraint firstItem="b6p-48-GCT" firstAttribute="centerX" secondItem="Lcl-sH-9Bq" secondAttribute="centerX" id="yNc-kc-l5u"/>
                         </constraints>
                     </view>
