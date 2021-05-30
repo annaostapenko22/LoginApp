@@ -105,17 +105,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="jLQ-lR-f7Z">
-                                <rect key="frame" x="19" y="295.5" width="376" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jLQ-lR-f7Z">
+                                <rect key="frame" x="41" y="295.5" width="332" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvO-ol-HEA">
-                                        <rect key="frame" x="0.0" y="0.0" width="57" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="50"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="REL-5y-wq1">
-                                        <rect key="frame" x="124" y="0.0" width="252" height="50"/>
+                                        <rect key="frame" x="80" y="0.0" width="252" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyr-Ue-pZ7">
                                                 <rect key="frame" x="0.0" y="0.0" width="24.5" height="50"/>
@@ -205,8 +205,8 @@
                                     <constraint firstAttribute="height" constant="50" id="uJg-Ip-m1P"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="AUl-vK-YV0">
-                                <rect key="frame" x="18.5" y="223.5" width="376" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AUl-vK-YV0">
+                                <rect key="frame" x="40.5" y="223.5" width="332" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="water " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ui-AA-0Md" userLabel="water">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
@@ -215,7 +215,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="uu2-5u-55O">
-                                        <rect key="frame" x="124" y="0.0" width="252" height="40"/>
+                                        <rect key="frame" x="80" y="0.0" width="252" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUe-tJ-4Fx">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="40"/>
