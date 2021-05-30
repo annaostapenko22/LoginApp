@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    let userName = "Anna"
-    let userPassword = "Password"
+    private let userName = "Anna"
+    private let userPassword = "Password"
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
@@ -23,8 +23,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func onLoginTapped() {
-        if(checkLoginData()){
-            performSegue(withIdentifier: "showWelcomeScreen", sender: nil)
+        if checkLoginData() {
+            performSegue(withIdentifier: "showTabBarController", sender: nil)
             self.view.endEditing(true)
         } else {
             showErrorNotification(title: "Invalid login or password ❌", message: "Please, enter correct login and password")
@@ -32,23 +32,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onForgotUserName() {
-        showErrorNotification(title: "Oops😉", message: "You have forgotten user name")
+        showErrorNotification(title: "Oops😉", message: "Your user name is \(userName)")
     }
     
     @IBAction func onForgotPassword() {
-        showErrorNotification(title: "Oops😉", message: "You have forgotten user password")
+        showErrorNotification(title: "Oops😉", message: "Your password is \(userPassword)")
     }
     
     
     @IBAction  func unwindSegueToMainScreen(segue: UIStoryboardSegue) {
-        
     }
     
     private func checkLoginData() -> Bool {
-        if(userNameTextField.text == userName && userPasswordTextField.text == userPassword) {
-            return true
-        }
-        return false
+        userNameTextField.text == userName && userPasswordTextField.text == userPassword
     }
     
     private func showErrorNotification(title: String, message: String) {
@@ -64,17 +60,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else {return}
-        welcomeVC.userName = userNameTextField.text
-        userNameTextField.text = ""
-        userPasswordTextField.text = ""
-        
+        let tabVC = segue.destination as? UITabBarController
+        for viewcontroller in tabVC?.viewControllers ?? [] {
+            if let userProfileVC = viewcontroller as? UserProfileViewController {
+                userProfileVC.user.userName = "Anna"
+                userNameTextField.text = ""
+                userPasswordTextField.text = ""
+            }
+            else if let userDetailsVC = viewcontroller as? UserDetailsViewController {
+                userDetailsVC.user.userDetails = "Anna's"
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
-    
 }
 
